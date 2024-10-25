@@ -1,1 +1,176 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Victor Geadah - Home Page</title>
+  <style>
+    body {
+        width: 50%; /* Set width to 60% */
+        margin: 2% auto 0; /* Center the content */
+        font-size: 16px; /* Adjust the value as needed */
+        font-family: 'Roboto', sans-serif; /* Set font to Roboto, sans-serif */
+        font-weight: 300;
+        line-height: 1.25;
+    }
+    /* Basic styling for tabs */
+    .tab {
+      display: flex;
+      cursor: pointer;
+      padding: 10px;
+      /* background-color: #f1f1f1; */
+      /* border: 1px solid #ccc; */
+      border-bottom: none;
+      margin-right: 5px;
+    }
+    .tab.active {
+      background-color: #fff;
+      font-weight: bold;
+      /* border-bottom: 2px solid #008cba; */
+    }
+    /* Styling for the tab content */
+    .tab-content {
+      display: none;
+      padding: 20px;
+      /* border: 1px solid #ccc; */
+      background-color: #fff;
+      border-bottom: 1px solid #ccc;
+    }
+    .tab-content.active {
+      display: block;
+    }
+    /* Container for the tabs */
+    .tab-container {
+      display: flex;
+      border-bottom: 1px solid #ccc;
+    }
+
+    /* Add media query for adjusting width on smaller screens. 768px */
+    @media (max-width: 768px) {
+            body {
+                width: 90%; /* Set width to 100% for smaller screens */
+            }
+        }
+
+        li {
+            margin-bottom: 10px; /* Adjust margin bottom to create space between list items */
+        }
+
+        .image-wrapper {
+            float: right; /* Float the image to the left */
+            margin-left: 20px; /* Add some margin to create space between the image and text */
+        }
+
+        .name {
+            font-weight: 300; /* Set font weight to body font weight, i.e. no style */
+            /* text-decoration: underline; */
+        }
+  </style>
+</head>
+<body>
+
+  <div class="tab-container">
+    <div class="tab active" onclick="openTab(event, 'home')">Home</div>
+    <div class="tab" onclick="openTab(event, 'publications')">Publications</div>
+  </div>
+
+  <div id="home" class="tab-content active">
+    <h1>Victor Geadah</h1>
+    <!-- <p>Welcome to my academic website, simply formated in HTML as an ode my undergraduate math professors.</p> -->
+    <div class="image-wrapper">
+        <img src="FB_IMG_1601581883989.jpg" alt="Example Image" width="200" height="200">
+    </div>
+    <p>
+        I'm a PhD Candidate in Applied & Computational Mathematics at Princeton University, 
+        working under the supervision of <a href="https://pillowlab.princeton.edu/jpillow/">Jonathan Pillow</a> at the Princeton Neuroscience Institute.
+    </p>
+    <p>
+        <!-- My work generally aims to bridge normative and descriptive approaches to understanding decision making.  -->
+        <!-- My research aims to bridge theoretical insights into dynamical computation with experimental data-driven approaches,
+        hoping to help close the loop between theory and experiments in neuroscience.  -->
+        My research interests span computational neuroscience, dynamical systems and probabilistic machine learning. 
+        I'm generally interested in bridging normative accounts with descriptive approaches to analyzing data, 
+        as to help close the loop in neuroscience between theoretical insights into dynamical computation and experiments.
+        Currently, I focus on exploring how latent processes evolve over time and influence decision-making, and how we can infer from experimental data what these control processes are.
+        <!-- hoping to help close the loop between theory and experiments in neuroscience -->
+        <!-- , where I also collaborate with <a href="https://psych.princeton.edu/people/jonathan-cohen">Jon Cohen</a>. -->
+        <!-- Interested in non-stationarity and time-varying dynamics, developping normative theories and descriptive tools to identify them.  -->
+        <!-- and to be supported by Canadian doctoral fellowships from NSERC and FRQNT.  -->
+        <!-- Current projects include statistical inference of optimal control in partially observed systems, and inverse reinforcement learning to characterize learning rules in animal decision-making -->
+    </p>
+    <!-- I'm a 3rd-year PhD student in applied mathematics (PACM), with a MASt (Part III) in applied mathematics from the University of Cambridge 
+        and a B.Sc. in mathematics from the University of Montreal, where I worked on dynamic coding in recurrent neural networks with Dr. Guillaume Lajoie.  
+        
+        My current research projects target how neural and latent dynamics can support representations for cognitive processes. -->
+    <p><strong>Bio:</strong> 
+        Before Princeton, I studied applied mathematics at Cambridge (master's student, Part III), and mathematics at the Université de Montréal (BSc), where I worked with Guillaume Lajoie on dynamic coding in recurrent neural networks.
+        You can find more info in my <a href="/Users/victorgeadah_maciii/Documents/1_Victor_Geadah/website/files/CV_Victor_Geadah.pdf" target="_blank">CV (pdf)</a>.
+    </p>
+    <!-- <p>Beside research, I love photography, skiing, and coffee.</p> -->
+    <p>Contact me at: <span style="font-family: monospace; font-size: 13px">victor.geadah[ at ]princeton.edu</span></p>
+    <!-- <p>Here is a short CV.</p> -->
+    <br><br>
+    <p>[<a href="https://scholar.google.com/citations?user=YxbE8CwAAAAJ&hl=en">Google Scholar</a>] [<a href="https://github.com/vgeadah">GitHub</a>]</p>
+  </div>
+  
+  <div id="publications" class="tab-content">
+    <h2>Publications</h2>
+    <ul>
+        <li>
+            <b>Inferring system and optimal control parameters of closed-loop systems from partial observations</b><br>
+            <span class="name">Victor Geadah</span>, Juncal Arbelaiz, Harrison Ritz, Nathaniel D. Daw, Jonathan D. Cohen, Jonathan W. Pillow (2024)<br> 
+            <i>IEEE Conference on Decision and Control (CDC)</i> (in press).
+        </li>
+        <li>
+            <b>Parsing neural dynamics with infinite recurrent switching linear dynamical systems</b><br>
+            <span class="name">Victor Geadah</span>, International Brain Laboratory, Jonathan W. Pillow (2024)<br>
+            <i>The Twelfth International Conference on Learning Representations (ICLR)</i>. 
+            [<a href="https://openreview.net/forum?id=YIls9HEa52">link</a>, <a href="https://openreview.net/pdf?id=YIls9HEa52">pdf</a>, <a href="bibtex/geadah2024parsing.txt">bibtex</a>]
+            <!-- <br><br>
+            TL;DR: We use PDE theory to derive a prior for dynamic discrete state transitions in a switching model that helps with non-stationary data.  -->
+        </li>
+        <li>
+            <b>Sparse-coding variational autoencoders</b><br>
+            <span class="name">Victor Geadah</span>*, Gabriel Barello*, Daniel Greenidge, Adam S. Charles, Jonathan W. Pillow (2024)<br>
+            <i>Neural Computation</i> (in press).
+
+            <!-- <br><br>
+            TL;DR: We cast the famous Sparse Coding model fitting as a form of variational EM, and show the benefits of employing general posteriors and variational inference.  -->
+        </li>
+    </ul>
+
+    *: Equal contribution.
+
+    <h2>Preprints</h2>
+    <ul>
+        <li>
+            <b>Neural networks with optimized single-neuron adaptation uncover biologically plausible regularization</b><br>
+            Victor Geadah, Stefan Horoi, Giancarlo Kerg, Guy Wolf, Guillaume Lajoie<br>
+            <i>Under review</i>. [<a href="https://www.biorxiv.org/content/10.1101/2022.04.29.489963v3">bioRxiv</a>]. 
+        </li>
+    </ul>
+  </div>
+
+  <script>
+    function openTab(event, tabName) {
+      // Hide all tab content and remove 'active' class from all tabs
+      var contents = document.getElementsByClassName("tab-content");
+      for (var i = 0; i < contents.length; i++) {
+        contents[i].style.display = "none";
+        contents[i].classList.remove("active");
+      }
+      
+      var tabs = document.getElementsByClassName("tab");
+      for (var i = 0; i < tabs.length; i++) {
+        tabs[i].classList.remove("active");
+      }
+
+      // Show the clicked tab content and mark it as 'active'
+      document.getElementById(tabName).style.display = "block";
+      document.getElementById(tabName).classList.add("active");
+      event.currentTarget.classList.add("active");
+    }
+  </script>
+
+</body>
+</html>
