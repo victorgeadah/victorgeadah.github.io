@@ -45,6 +45,12 @@
       border-bottom: 1px solid #ccc;
     }
 
+    .name {
+        font-weight: 300; /* Set font weight to body font weight, i.e. no style */
+        text-decoration: underline;
+        /* font-weight: 600; */
+    }
+
     /* Add media query for adjusting width on smaller screens. 768px */
     @media (max-width: 768px) {
             body {
@@ -60,11 +66,6 @@
             float: right; /* Float the image to the left */
             margin-left: 20px; /* Add some margin to create space between the image and text */
         }
-
-        .name {
-            font-weight: 300; /* Set font weight to body font weight, i.e. no style */
-            /* text-decoration: underline; */
-        }
   </style>
 </head>
 <body>
@@ -72,6 +73,7 @@
   <div class="tab-container">
     <div class="tab active" onclick="openTab(event, 'home')">Home</div>
     <div class="tab" onclick="openTab(event, 'publications')">Publications</div>
+    <!-- <div class="tab" onclick="openTab(event, 'resources')">Resources</div> -->
   </div>
 
   <div id="home" class="tab-content active">
@@ -87,13 +89,20 @@
     <p>
         <!-- My research aims to bridge theoretical insights into dynamical computation with experimental data-driven approaches,
         hoping to help close the loop between theory and experiments in neuroscience.  -->
-        My research interests span computational neuroscience, dynamical systems and probabilistic machine learning. 
-        I'm generally interested in bridging normative accounts with descriptive approaches to analyzing data, 
-        as to help close the loop in neuroscience between theoretical insights into dynamical computation and experiments.
-        Currently, I focus on exploring how latent processes evolve over time and influence decision-making, and how we can infer from experimental data what these control processes are.
+        My research interests span dynamical systems, control theory and probabilistic machine learning.
+        I'm especially interested in applying these topics to computational neuroscience to study learning, decision-making and state-dependent neural computation. 
+        I like combining normative accounts with descriptive approaches to these questions, as to help bridge between theoretical insights and experimental findings.
+    </p>
+    <p>
+        Specifically, 
+        <!-- I currently focus on exploring control and probabilitic inference in state-space models.  -->
+        my ongoing projects include 
+        statistical inference of optimal control in partially observed systems, 
+        inference in dynamical system models across experimental conditions, 
+        and inverse reinforcement learning to characterize learning rules in animal decision-making. 
+        <!-- latent processes evolve over time and influence decision-making, and how we can infer from experimental data what these control processes are. -->
         <!-- and to be supported by Canadian doctoral fellowships from NSERC and FRQNT.  -->
         <!-- Current projects include statistical inference of optimal control in partially observed systems, and inverse reinforcement learning to characterize learning rules in animal decision-making -->
-    </p>
     <p><strong>Bio:</strong> 
         Before Princeton, I studied applied mathematics at the <a href="https://www.damtp.cam.ac.uk/">University of Cambridge</a> (master's student, Part III), and mathematics at the <a href="https://dms.umontreal.ca/en/homepage">Université de Montréal</a> (BSc), where I worked with <a href="https://www.guillaumelajoie.com/home">Guillaume Lajoie</a> on dynamic coding in recurrent neural networks.
         <!-- You can find more info in my <a href="/Users/victorgeadah_maciii/Documents/1_Victor_Geadah/website/files/CV_Victor_Geadah.pdf" target="_blank">CV (pdf)</a>. -->
@@ -113,21 +122,10 @@
   </div>
   
   <div id="publications" class="tab-content">
-    <h2>Publications</h2>
+    <h1>Publications</h1>
+
+    <h2>Journal Articles</h2>
     <ul>
-        <li>
-            <b>Inferring system and optimal control parameters of closed-loop systems from partial observations</b><br>
-            <span class="name">Victor Geadah</span>, Juncal Arbelaiz, Harrison Ritz, Nathaniel D. Daw, Jonathan D. Cohen, Jonathan W. Pillow (2024)<br> 
-            <i>IEEE Conference on Decision and Control (CDC)</i> (in press).
-        </li>
-        <li>
-            <b>Parsing neural dynamics with infinite recurrent switching linear dynamical systems</b><br>
-            <span class="name">Victor Geadah</span>, International Brain Laboratory, Jonathan W. Pillow (2024)<br>
-            <i>The Twelfth International Conference on Learning Representations (ICLR)</i>. 
-            [<a href="https://openreview.net/forum?id=YIls9HEa52">link</a>, <a href="https://openreview.net/pdf?id=YIls9HEa52">pdf</a>, <a href="bibtex/geadah2024parsing.txt">bibtex</a>]
-            <!-- <br><br>
-            TL;DR: We use PDE theory to derive a prior for dynamic discrete state transitions in a switching model that helps with non-stationary data.  -->
-        </li>
         <li>
             <b>Sparse-coding variational autoencoders</b><br>
             <span class="name">Victor Geadah</span>*, Gabriel Barello*, Daniel Greenidge, Adam S. Charles, Jonathan W. Pillow (2024)<br>
@@ -140,14 +138,77 @@
 
     *: Equal contribution.
 
+    <h2>Conference Proceedings</h2>
+    <ul>
+      <li>
+          <b>Inferring system and optimal control parameters of closed-loop systems from partial observations</b><br>
+          <span class="name">Victor Geadah</span>, Juncal Arbelaiz, Harrison Ritz, Nathaniel D. Daw, Jonathan D. Cohen, Jonathan W. Pillow (2024)<br> 
+          <i>IEEE Conference on Decision and Control (CDC)</i> (in press).
+      </li>
+      <li>
+          <b>Parsing neural dynamics with infinite recurrent switching linear dynamical systems</b><br>
+          <span class="name">Victor Geadah</span>, International Brain Laboratory, Jonathan W. Pillow (2024)<br>
+          <i>The Twelfth International Conference on Learning Representations (ICLR)</i>. 
+          [<a href="https://openreview.net/forum?id=YIls9HEa52">link</a>, <a href="https://openreview.net/pdf?id=YIls9HEa52">pdf</a>, <a href="bibtex/geadah2024parsing.txt">bibtex</a>]
+          <!-- <br><br>
+          TL;DR: We use PDE theory to derive a prior for dynamic discrete state transitions in a switching model that helps with non-stationary data.  -->
+      </li>
+      <li>
+          <b>Low-dimensional dynamics of encoding and learning in recurrent neural networks</b><br>
+          Stefan Horoi, <span class="name">Victor Geadah</span>, Guy Wolf, Guillaume Lajoie (2020)<br>
+          <i>Canadian Conference on Artificial Intelligence</i>. 
+          <!-- <br><br>
+          TL;DR: We show that the exchangeability assumption in switching models can be relaxed to allow for more flexible dynamics.  -->
+      </li>
+  </ul>
+
     <h2>Preprints</h2>
     <ul>
         <li>
             <b>Neural networks with optimized single-neuron adaptation uncover biologically plausible regularization</b><br>
-            Victor Geadah, Stefan Horoi, Giancarlo Kerg, Guy Wolf, Guillaume Lajoie<br>
-            <i>Under review</i>. [<a href="https://www.biorxiv.org/content/10.1101/2022.04.29.489963v3">bioRxiv</a>]. 
+            <span class="name">Victor Geadah</span>, Stefan Horoi, Giancarlo Kerg, Guy Wolf, Guillaume Lajoie<br>
+            <i>PLOS Computational Biology</i>. Accepted, in press. [<a href="https://www.biorxiv.org/content/10.1101/2022.04.29.489963v3">bioRxiv</a>]. 
         </li>
     </ul>
+
+    <!-- <h2>Conference Abstracts</h2>
+    <ul>
+      <li>
+        <b>Parsing neural dynamics with infinite recurrent switching linear dynamical systems.</b> <br>
+        <span class="name">Victor Geadah</span> and Pillow, J. W. (2023). <br>
+        Computational and Systems Neuroscience (COSYNE). [poster]
+      </li>
+      <li>
+        <b>Non-exchangeability in infinite switching linear dynamical systems.</b> <br>
+        <span class="name">Victor Geadah</span> and Pillow, J. W. (2022). <br>
+        NeurIPS Workshop on Gaussian Processes, Spatiotemporal Modeling, and Decision-making Systems. [poster | <a href="https://gp-seminar-series.github.io/neurips-2022/assets/camera_ready/59.pdf">pdf</a>]
+      </li>
+  
+      <li>
+        <b>Top-down optimization recovers biological coding principles of single-neuron adaptation in RNNs.</b> <br>
+        <span class="name">Victor Geadah</span>, Horoi, S., Kerg, G., Wolf, G., and Lajoie, G. (2022). <br>
+        Computational and Systems Neuroscience (COSYNE). [poster]
+      </li>
+
+      <li>
+        <b>Network-level computational advantages of single-neuron adaptation.</b> <br>
+        <span class="name">Victor Geadah</span>, Kerg, G., Horoi, S., Wolf, G., and Lajoie, G. (2021). <br>
+        Computational and Systems Neuroscience (COSYNE). [poster]
+      </li>
+      
+      <li>
+        <b>Single neuron nonlinearities and their impact on learning dynamics of recurrent networks.</b> <br>
+        <span class="name">Victor Geadah</span>, Wolf, G., and Lajoie, G. (2020). <br>
+        From Neuroscience to Artificially Intelligent Systems (NAISys). [<b>talk</b>]
+      </li>
+
+      <li>
+        <b>Asymptotics of steklov eigenvalues for regular polygons</b> <br>
+        <span class="name">Victor Geadah</span> and Polterovich, I. <br>
+        Annual Symposium in Mathematics for a Future in Research and Industry. [poster]
+        Poster Public Prize 
+      </li>
+  </ul> -->
   </div>
 
   <script>
