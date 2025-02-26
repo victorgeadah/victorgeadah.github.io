@@ -50,6 +50,12 @@
         text-decoration: underline;
         /* font-weight: 600; */
     }
+    a {
+      color: blue;        /* Inherits the text color from its parent */
+    } /* text-decoration: none; Removes the underline */
+    a:visited {
+      color: blue;
+    }
 
     /* Add media query for adjusting width on smaller screens. 768px */
     @media (max-width: 768px) {
@@ -106,7 +112,7 @@
         <!-- You can find more info in my <a href="/Users/victorgeadah_maciii/Documents/1_Victor_Geadah/website/files/CV_Victor_Geadah.pdf" target="_blank">CV (pdf)</a>. -->
       </p>
       <!-- <p>Contact me at: <span style="font-family: monospace; font-size: 13px">victor.geadah[ at ]princeton.edu</span></p> -->
-      <p>[<a href="https://scholar.google.com/citations?user=YxbE8CwAAAAJ&hl=en">Google Scholar</a>] [<a href="https://github.com/victorgeadah">GitHub</a>]</p>
+      <p>[<a href="https://scholar.google.com/citations?user=YxbE8CwAAAAJ&hl=en">Google Scholar</a>] [<a href="https://github.com/victorgeadah">GitHub</a>] [<a href="">CV</a>]</p>
       <br><br>
       <hr>
       <p>
@@ -127,10 +133,10 @@
     <ul>
       <li>
         <b>Sparse-coding variational autoencoders</b><br>
-        <span class="name">Victor Geadah</span>*, Gabriel Barello*, Daniel Greenidge, Adam S. Charles, Jonathan W. Pillow (2024)<br>
+        <span class="name">Victor Geadah</span>*, Gabriel Barello*, Daniel Greenidge, Adam S. Charles, and Jonathan W. Pillow (2024)<br>
         <i>Neural Computation</i> 36(12), 2571-2601. 
-        [<a href="https://direct.mit.edu/neco/article/36/12/2571/124821/Sparse-Coding-Variational-Autoencoders">link</a>,
-        <a href="https://pillowlab.princeton.edu/pubs/Geadah2024_SCVAE.pdf">pdf</a>,
+        [<a href="https://direct.mit.edu/neco/article/36/12/2571/124821/Sparse-Coding-Variational-Autoencoders">link</a> |
+        <a href="https://pillowlab.princeton.edu/pubs/Geadah2024_SCVAE.pdf">pdf</a> |
         <a href="https://github.com/victorgeadah/SVAE">code</a>]
         
         <!-- <br><br>
@@ -138,8 +144,8 @@
       </li>
       <li>
         <b>Neural networks with optimized single-neuron adaptation uncover biologically plausible regularization</b><br>
-        <span class="name">Victor Geadah</span>, Stefan Horoi, Giancarlo Kerg, Guy Wolf, Guillaume Lajoie (2024)<br>
-        <i>PLOS Computational Biology</i> 20 (12), e1012567. [<a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1012567">link</a>, <a href="https://www.biorxiv.org/content/10.1101/2022.04.29.489963v3">bioRxiv</a>]. 
+        <span class="name">Victor Geadah</span>, Stefan Horoi, Giancarlo Kerg, Guy Wolf, and Guillaume Lajoie (2024)<br>
+        <i>PLOS Computational Biology</i> 20 (12), e1012567. [<a href="https://journals.plos.org/ploscompbiol/article?id=10.1371/journal.pcbi.1012567">link</a> | <a href="https://www.biorxiv.org/content/10.1101/2022.04.29.489963v3">bioRxiv</a>]. 
       </li>
     </ul>
 
@@ -149,25 +155,25 @@
     <ul>
       <li>
         <b>Comparing noisy neural population dynamics using optimal transport distances</b><br>
-        Amin Nejatbakhsh, <span class="name">Victor Geadah</span>, Alex H. Williams, David Lipshutz (2025)<br>
-        <i>The Thirteenth International Conference on Learning Representations (ICLR)</i>. In press. [<a href="https://arxiv.org/abs/2412.14421">arXiv</a>]
+        Amin Nejatbakhsh, <span class="name">Victor Geadah</span>, Alex H. Williams, and David Lipshutz (2025)<br>
+        <i>The Thirteenth International Conference on Learning Representations (ICLR)</i>. [<b>oral</b> | <a href="https://openreview.net/forum?id=cNmu0hZ4CL">link</a>]
       </li>
       <li>
           <b>Inferring system and optimal control parameters of closed-loop systems from partial observations</b><br>
-          <span class="name">Victor Geadah</span>, Juncal Arbelaiz, Harrison Ritz, Nathaniel D. Daw, Jonathan D. Cohen, Jonathan W. Pillow (2024)<br> 
-          <i>IEEE Conference on Decision and Control (CDC)</i>. In press. [<a href="files/pubs/CDC2024_1771_online.pdf">pdf</a>]
+          <span class="name">Victor Geadah</span>, Juncal Arbelaiz, Harrison Ritz, Nathaniel D. Daw, Jonathan D. Cohen, and Jonathan W. Pillow (2024)<br> 
+          <i>The 63rd IEEE Conference on Decision and Control (CDC)</i>. In press. [<a href="https://arxiv.org/abs/2502.15014">arXiv</a>] <!-- [<a href="files/pubs/CDC2024_1771_online.pdf">pdf</a>] -->
       </li>
       <li>
           <b>Parsing neural dynamics with infinite recurrent switching linear dynamical systems</b><br>
-          <span class="name">Victor Geadah</span>, International Brain Laboratory, Jonathan W. Pillow (2024)<br>
+          <span class="name">Victor Geadah</span>, International Brain Laboratory, and Jonathan W. Pillow (2024)<br>
           <i>The Twelfth International Conference on Learning Representations (ICLR)</i>. 
-          [<a href="https://openreview.net/forum?id=YIls9HEa52">link</a>, <a href="https://openreview.net/pdf?id=YIls9HEa52">pdf</a>, <a href="bibtex/geadah2024parsing.txt">bibtex</a>]
+          [<a href="https://openreview.net/forum?id=YIls9HEa52">link</a> | <a href="https://openreview.net/pdf?id=YIls9HEa52">pdf</a> | <a href="bibtex/geadah2024parsing.txt">bibtex</a>]
           <!-- <br><br>
           TL;DR: We use PDE theory to derive a prior for dynamic discrete state transitions in a switching model that helps with non-stationary data.  -->
       </li>
       <li>
           <b>Low-dimensional dynamics of encoding and learning in recurrent neural networks</b><br>
-          Stefan Horoi, <span class="name">Victor Geadah</span>, Guy Wolf, Guillaume Lajoie (2020)<br>
+          Stefan Horoi, <span class="name">Victor Geadah</span>, Guy Wolf, and Guillaume Lajoie (2020)<br>
           <i>Canadian Conference on Artificial Intelligence</i>. 
           <!-- <br><br>
           TL;DR: We show that the exchangeability assumption in switching models can be relaxed to allow for more flexible dynamics.  -->
@@ -177,8 +183,13 @@
     <h2>Preprints</h2>
     <ul>
       <li>
-        <b>Modeling Complex Animal Behavior with Latent State Inverse Reinforcement Learning</b><br>
-        Aditi Jha, <span class="name">Victor Geadah</span>, Jonathan W Pillow.<br>
+        <b>Modeling neural activity with conditionally linear dynamical systems</b><br>
+        <span class="name">Victor Geadah</span>, Amin Nejatbakhsh, David Lipshutz, Jonathan W. Pillow, and Alex H. Williams.<br>
+        [<a href="https://arxiv.org/abs/2502.18347">arXiv</a> | <a href="https://github.com/neurostatslab/clds">code</a>]
+      </li>
+      <li>
+        <b>Modeling complex animal behavior with latent state inverse reinforcement learning</b><br>
+        Aditi Jha, <span class="name">Victor Geadah</span>, and Jonathan W. Pillow.<br>
         [<a href="https://www.biorxiv.org/content/10.1101/2024.11.13.623515v1.abstract">bioRxiv</a>]
       </li>
     </ul>
