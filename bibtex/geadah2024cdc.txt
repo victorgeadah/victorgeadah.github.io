@@ -1,0 +1,11 @@
+@inproceedings{geadah2024:CDC,
+  author={Geadah, Victor and Arbelaiz, Juncal and Ritz, Harrison and Daw, Nathaniel D. and Cohen, Jonathan D. and Pillow, Jonathan W.},
+  booktitle={2024 IEEE 63rd Conference on Decision and Control (CDC)}, 
+  title={Inferring System and Optimal Control Parameters of Closed-Loop Systems from Partial Observations}, 
+  year={2024},
+  volume={},
+  number={},
+  pages={8006-8013},
+  keywords={Regulators;Optimal control;Stochastic processes;Probabilistic logic;System identification;Numerical models;Closed loop systems},
+  doi={10.1109/CDC56724.2024.10886179}
+  }

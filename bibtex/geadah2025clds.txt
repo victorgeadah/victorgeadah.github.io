@@ -1,0 +1,8 @@
+@inproceedings{
+    geadah2025:CLDS,
+    title={Modeling Neural Activity with Conditionally Linear Dynamical Systems},
+    author={Victor Geadah and Amin Nejatbakhsh and David Lipshutz and Jonathan W. Pillow and Alex H Williams},
+    booktitle={The Thirty-ninth Annual Conference on Neural Information Processing Systems},
+    year={2025},
+    url={https://openreview.net/forum?id=xgmMdTTzjj}
+}
