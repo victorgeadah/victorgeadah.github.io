@@ -62,8 +62,9 @@
         /* font-weight: 600; */
     }
     a {
-      color: blue;        /* Inherits the text color from its parent */
-    } /* text-decoration: none; Removes the underline */
+      color: blue;
+      text-decoration: none; /* Removes the underline */
+    }
     a:visited {
       color: blue;
     }
@@ -71,7 +72,10 @@
     /* Add media query for adjusting width on smaller screens. 768px */
     @media (max-width: 768px) {
             body {
-                width: 90%; /* Set width to 100% for smaller screens */
+                width: 95%; /* Set width to 100% for smaller screens */
+            }
+            .tab-content {
+                padding: 20px 8px; /* Keep vertical padding, reduce side padding */
             }
         }
 
@@ -111,17 +115,17 @@
   <div id="home" class="tab-content active">
     <h1>Victor Geadah</h1>
     <!-- <p>Welcome to my academic website, simply formated in HTML as an ode my undergraduate math professors.</p> -->
+    <div class="image-wrapper">
+        <img src="files/META_headshot_Jul25.jpg" alt="Profile Picture" width="200" height="200">
+    </div>
     <p>
         <i>(I pronounce my last name as "Jada")</i>
     </p>
-    <div class="image-wrapper">
-        <img src="files/META_headshot_Jul25.jpg" alt="Profile Picture" width="210" height="210">
-    </div>
     <p>
-        I'm a Flatiron Research Fellow in the <a href="https://www.simonsfoundation.org/flatiron/center-for-computational-neuroscience/">Center for Computational Neuroscience</a> at the Flatiron Institute, NYC.
+        I am a Flatiron Research Fellow in the <a href="https://www.simonsfoundation.org/flatiron/center-for-computational-neuroscience/">Center for Computational Neuroscience</a> at the Flatiron Institute, NYC.
     </p>
     <div class="image-wrapper-mobile">
-        <img src="files/META_headshot_Jul25.jpg" alt="Profile Picture" width="210" height="210">
+        <img src="files/META_headshot_Jul25.jpg" alt="Profile Picture" width="200" height="200">
     </div>
     <p>
         <!-- My research aims to bridge theoretical insights into dynamical computation with experimental data-driven approaches,
