@@ -83,6 +83,20 @@
             float: right; /* Float the image to the left */
             margin-left: 20px; /* Add some margin to create space between the image and text */
         }
+
+        /* Mobile copy of the picture, shown after the first paragraph instead of floated */
+        .image-wrapper-mobile {
+            display: none;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .image-wrapper {
+                display: none;
+            }
+            .image-wrapper-mobile {
+                display: block;
+            }
+        }
   </style>
 </head>
 <body>
@@ -106,6 +120,9 @@
     <p>
         I'm a Flatiron Research Fellow in the <a href="https://www.simonsfoundation.org/flatiron/center-for-computational-neuroscience/">Center for Computational Neuroscience</a> at the Flatiron Institute, NYC.
     </p>
+    <div class="image-wrapper-mobile">
+        <img src="files/META_headshot_Jul25.jpg" alt="Profile Picture" width="210" height="210">
+    </div>
     <p>
         <!-- My research aims to bridge theoretical insights into dynamical computation with experimental data-driven approaches,
         hoping to help close the loop between theory and experiments in neuroscience.  -->
@@ -113,8 +130,10 @@
         I'm especially interested in applying these topics to computational neuroscience to study learning, decision-making and state-dependent neural computation. 
         I like combining normative accounts with descriptive approaches to these questions, as to help bridge between theoretical insights and experimental findings. -->
         <!-- Specifically,  -->
-        My research falls within statistical neuroscience, spanning dynamical systems, control theory, and probabilistic machine learning.
-        I want to understand how intelligent systems learn and adapt to new environments, and I approach this by building statistical methods grounded in normative theory, which aim to explain not just what we observe in neural and behavioral data, but <em>why</em>.
+        <!-- My research falls within statistical neuroscience, spanning dynamical systems, control theory, and probabilistic machine learning.
+        I want to understand how intelligent systems learn and adapt to new environments, and  -->
+        My research draws on dynamical systems, control theory, and probabilistic machine learning to understand how intelligent systems learn and adapt to new environments.
+        I approach this by building statistical methods grounded in normative theory, which aim to explain both <em>what</em> we observe in data, and <em>why</em>.
         You can learn more about my research in this <a href="https://gradschool.princeton.edu/news/2026/jacobus-fellows">video</a>.
     </p>
     <p>
@@ -143,7 +162,7 @@
         <span style="font-size: 12px;">
           Flatiron Institute, Simons Foundation</br>
           New York, NY 10010, U.S.A.</br>
-          <span style="font-family: monospace">vgeadah[ at ]flatironinsitute.org</span>
+          <span style="font-family: monospace">vgeadah [at] flatironinsitute.org</span>
         </span>
       </p>
     </div>
